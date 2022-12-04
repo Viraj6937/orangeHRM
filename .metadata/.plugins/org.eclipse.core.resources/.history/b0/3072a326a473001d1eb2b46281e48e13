@@ -1,0 +1,23 @@
+package Resources;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class Base {
+
+	public WebDriver driver;
+	public Properties prop;
+	
+	public void initializeDriver() throws FileNotFoundException {
+		
+		String file = System.getProperty("user.dir")+"/src/test/java/Resources/data.properties";
+		
+		FileInputStream fis = new FileInputStream(file);
+		
+		prop = new Properties();
+		
+	}
+}

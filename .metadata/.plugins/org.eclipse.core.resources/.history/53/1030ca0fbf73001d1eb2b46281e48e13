@@ -1,0 +1,14 @@
+package TestFile;
+
+import com.aventstack.extentreports.ExtentReports;
+
+public class ExtentSparkReporterNG {
+	
+	public ExtentReports extent;
+	
+	
+	public void getReportObject() {
+		
+	}
+
+}

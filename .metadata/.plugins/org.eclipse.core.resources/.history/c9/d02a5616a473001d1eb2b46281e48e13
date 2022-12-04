@@ -1,0 +1,16 @@
+package Resources;
+
+import org.openqa.selenium.WebDriver;
+
+public class Base {
+
+	public WebDriver driver;
+	
+	public void initializeDriver() {
+		
+		String file = System.getProperty("user.dir")+"/src/test/java/Resources/data.properties";
+		
+		FileInputStream fis = new FileInputStream(file);
+		
+	}
+}

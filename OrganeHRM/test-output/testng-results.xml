@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-04T16:32:30 IST" name="Suite" finished-at="2022-12-04T16:37:15 IST" duration-ms="284971">
+    <groups>
+    </groups>
+    <test started-at="2022-12-04T16:32:30 IST" name="Test" finished-at="2022-12-04T16:37:15 IST" duration-ms="284971">
+      <class name="TestFile.LoginPageTest">
+        <test-method is-config="true" signature="navigateUrl()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:32:30 IST" name="navigateUrl" finished-at="2022-12-04T16:32:53 IST" duration-ms="22347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method signature="verify_url()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:32:53 IST" name="verify_url" finished-at="2022-12-04T16:32:54 IST" duration-ms="930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_url -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:32:54 IST" name="afterTest" finished-at="2022-12-04T16:32:55 IST" duration-ms="1527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="navigateUrl()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:32:55 IST" name="navigateUrl" finished-at="2022-12-04T16:33:23 IST" duration-ms="27690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method signature="verify_required_field_alert_is_displayed_for_empty_username_field()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:33:23 IST" name="verify_required_field_alert_is_displayed_for_empty_username_field" finished-at="2022-12-04T16:33:30 IST" duration-ms="7025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_required_field_alert_is_displayed_for_empty_username_field -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:33:30 IST" name="afterTest" finished-at="2022-12-04T16:33:32 IST" duration-ms="1518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="navigateUrl()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:33:32 IST" name="navigateUrl" finished-at="2022-12-04T16:33:56 IST" duration-ms="24091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method signature="verify_required_field_alert_is_displayed_for_empty_password_field()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:33:56 IST" name="verify_required_field_alert_is_displayed_for_empty_password_field" finished-at="2022-12-04T16:33:57 IST" duration-ms="1711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_required_field_alert_is_displayed_for_empty_password_field -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:33:57 IST" name="afterTest" finished-at="2022-12-04T16:33:59 IST" duration-ms="1376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="navigateUrl()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:33:59 IST" name="navigateUrl" finished-at="2022-12-04T16:34:23 IST" duration-ms="24180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method signature="verfiy_required_field_alert_is_displayed_for_empty_username_and_password_field()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:34:23 IST" name="verfiy_required_field_alert_is_displayed_for_empty_username_and_password_field" finished-at="2022-12-04T16:34:29 IST" duration-ms="6021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiy_required_field_alert_is_displayed_for_empty_username_and_password_field -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:34:29 IST" name="afterTest" finished-at="2022-12-04T16:34:30 IST" duration-ms="1556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="navigateUrl()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:34:30 IST" name="navigateUrl" finished-at="2022-12-04T16:34:56 IST" duration-ms="25478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method signature="verify_required_field_alert_is_not_displayed_after_refresh()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:34:56 IST" name="verify_required_field_alert_is_not_displayed_after_refresh" finished-at="2022-12-04T16:34:59 IST" duration-ms="3403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_required_field_alert_is_not_displayed_after_refresh -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:34:59 IST" name="afterTest" finished-at="2022-12-04T16:35:00 IST" duration-ms="833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="navigateUrl()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:35:00 IST" name="navigateUrl" finished-at="2022-12-04T16:35:25 IST" duration-ms="24375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method signature="verify_user_should_not_able_to_login_with_invalid_credentials()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:35:25 IST" name="verify_user_should_not_able_to_login_with_invalid_credentials" finished-at="2022-12-04T16:35:29 IST" duration-ms="4258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_user_should_not_able_to_login_with_invalid_credentials -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:35:29 IST" name="afterTest" finished-at="2022-12-04T16:35:29 IST" duration-ms="529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="navigateUrl()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:35:29 IST" name="navigateUrl" finished-at="2022-12-04T16:35:53 IST" duration-ms="23647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method signature="verify_invalid_credentials_alert_is_not_displayed_after_page_refresh()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:35:53 IST" name="verify_invalid_credentials_alert_is_not_displayed_after_page_refresh" finished-at="2022-12-04T16:36:07 IST" duration-ms="14228" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div.orangehrm-login-form > div.orangehrm-login-error > div.oxd-alert--error > div > p"}
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b493910e30c525422d3d62d4b785b33, findElement {using=css selector, value=div.orangehrm-login-form > div.orangehrm-login-error > div.oxd-alert--error > div > p}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91882\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52115/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b493910e30c525422d3d62d4b785b33]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.orangehrm-login-form > div.orangehrm-login-error > div.oxd-alert--error > div > p"}
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b493910e30c525422d3d62d4b785b33, findElement {using=css selector, value=div.orangehrm-login-form > div.orangehrm-login-error > div.oxd-alert--error > div > p}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91882\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52115/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b493910e30c525422d3d62d4b785b33
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at page_object.LoginPageObject.get_alert_field(LoginPageObject.java:42)
+at TestFile.LoginPageTest.verify_invalid_credentials_alert_is_not_displayed_after_page_refresh(LoginPageTest.java:155)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_invalid_credentials_alert_is_not_displayed_after_page_refresh -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:36:07 IST" name="afterTest" finished-at="2022-12-04T16:36:08 IST" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="navigateUrl()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:36:08 IST" name="navigateUrl" finished-at="2022-12-04T16:36:31 IST" duration-ms="22904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method signature="verify_user_redirects_to_reset_password_page_after_click_on_forgot_password()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:36:31 IST" name="verify_user_redirects_to_reset_password_page_after_click_on_forgot_password" finished-at="2022-12-04T16:36:33 IST" duration-ms="2100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_user_redirects_to_reset_password_page_after_click_on_forgot_password -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:36:33 IST" name="afterTest" finished-at="2022-12-04T16:36:34 IST" duration-ms="1514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="navigateUrl()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:36:34 IST" name="navigateUrl" finished-at="2022-12-04T16:37:09 IST" duration-ms="34203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method signature="verify_user_redirects_to_dashboard_after_login_with_valid_credentials()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:37:09 IST" name="verify_user_redirects_to_dashboard_after_login_with_valid_credentials" finished-at="2022-12-04T16:37:15 IST" duration-ms="6239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_user_redirects_to_dashboard_after_login_with_valid_credentials -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestFile.LoginPageTest@63a5e46c]" started-at="2022-12-04T16:37:15 IST" name="afterTest" finished-at="2022-12-04T16:37:15 IST" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- TestFile.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,12 @@
+package TestFile;
+
+public class ExtentSparkReporterNG {
+	
+	public extentReports extent;
+	
+	
+	public void getReportObject() {
+		
+	}
+
+}

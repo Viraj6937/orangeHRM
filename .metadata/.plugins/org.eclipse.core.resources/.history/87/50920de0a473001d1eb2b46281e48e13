@@ -1,0 +1,17 @@
+package page_object;
+
+import org.openqa.selenium.By;
+
+public class LoginPageObject {
+
+	public WebDriver driver;
+	
+	private By usernamefield = By.xpath("//input[@name='username']");
+	
+	
+	public WebElement get_username_field() {
+		return driver.
+	}
+	
+	
+}

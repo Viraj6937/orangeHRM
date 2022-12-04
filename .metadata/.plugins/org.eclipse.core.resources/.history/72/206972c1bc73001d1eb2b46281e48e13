@@ -1,0 +1,15 @@
+browser=chrome
+url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+reset_password=https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestPasswordResetCode
+dashboard_url=https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+
+
+!  login details ---->
+label_required_field=Required
+label_invalid_username = test
+label_invalid_password = test
+label_valid_username = Admin
+label_valid_password = admin123
+
+
+

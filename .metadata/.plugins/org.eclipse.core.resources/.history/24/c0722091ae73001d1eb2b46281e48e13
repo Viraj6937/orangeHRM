@@ -1,0 +1,12 @@
+browser=chrome
+url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+
+!  login details ---->
+invalid_username = test
+invalid_password = test
+valid_username = Admin
+valid_password = admin123
+
+
+
