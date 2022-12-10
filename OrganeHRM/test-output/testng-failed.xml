@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestFile.LoginPageTest">
+      <class name="TestFile.DashboardPageTest">
         <methods>
-          <include name="verify_invalid_credentials_alert_is_not_displayed_after_page_refresh"/>
-          <include name="afterTest"/>
-          <include name="navigateUrl"/>
+          <include name="verify_about_us_window_popup_is_opened"/>
+          <include name="navigate_url"/>
+          <include name="terminate"/>
         </methods>
-      </class> <!-- TestFile.LoginPageTest -->
+      </class> <!-- TestFile.DashboardPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

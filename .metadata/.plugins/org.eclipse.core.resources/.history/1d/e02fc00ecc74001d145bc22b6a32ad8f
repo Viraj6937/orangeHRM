@@ -1,0 +1,7 @@
+package TestFile;
+
+import Resources.Base;
+
+public class DashboardPageTest extends Base {
+
+}

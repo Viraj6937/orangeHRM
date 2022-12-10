@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <listeners>
+    <listener class-name="TestFile.Listeners"/>
+  </listeners>
+  
+  <test  name="Test">
+    <classes>
+      <class name="TestFile.LoginPageTest">
+         <methods>
+             <exclude name="verify_url"/>
+             <exclude name="verify_required_field_alert_is_displayed_for_empty_username_field"/>
+             <exclude name="verify_required_field_alert_is_displayed_for_empty_password_field"/> 
+             <exclude name="verfiy_required_field_alert_is_displayed_for_empty_username_and_password_field"/>
+             <exclude name="verify_required_field_alert_is_not_displayed_after_refresh"/>
+             <exclude name="verify_user_should_not_able_to_login_with_invalid_credentials"/>
+             <exclude name="verify_invalid_credentials_alert_is_not_displayed_after_page_refresh"/>
+             <exclude name="verify_user_redirects_to_reset_password_page_after_click_on_forgot_password"/>
+             <exclude name="verify_user_redirects_to_dashboard_after_login_with_valid_credentials"/>
+             <exclude name="verify_user_profile_name_for_logged_in_account"/>
+             
+         </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

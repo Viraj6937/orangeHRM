@@ -1,0 +1,37 @@
+package TestFile;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import Resources.Base;
+import page_object.LoginPageObject;
+
+public class DashboardPageTest extends Base {
+
+	public WebDriver driver;
+	public LoginPageObject lpo;
+	
+	
+	public String username; 
+	public String password;
+	
+	@BeforeMethod
+	public void navigate_url() throws IOException {
+		driver = initializeDriver();
+	    driver.get(prop.getProperty("url"));
+	    driver.manage().window().maximize();
+	    username = prop.getProperty("label_valid_username");
+	    password = prop.getProperty("label_valid_password");
+	    lpo.getLogin(username, password);
+	}
+	
+	@AfterMethod
+	public void terminate() {
+		
+	}
+	
+	
+}

@@ -1,0 +1,82 @@
+package TestFile;
+
+import java.io.IOException;
+import java.net.http.HttpClient;
+import java.util.List;
+
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import Resources.Base;
+import page_object.DashboardPageObject;
+import page_object.LoginPageObject;
+
+public class DashboardPageTest extends Base {
+
+	public WebDriver driver;
+	public LoginPageObject lpo;
+	public DashboardPageObject dpo;
+	
+	public String username; 
+	public String password;
+	
+	public static Logger log = LogManager.getLogger(Base.class.getName());
+	
+	@BeforeMethod
+	public void navigate_url() throws IOException {
+		driver = initializeDriver();
+	    log.info("driver is been initialized");
+		driver.get(prop.getProperty("url"));
+	    log.info("user is redirected to site url");
+	    driver.manage().window().maximize();
+	    log.info("browser window is been maximized");
+	
+	    lpo = new LoginPageObject(driver);
+	    dpo = new DashboardPageObject(driver);
+	    
+	    username = prop.getProperty("label_valid_username");
+	    password = prop.getProperty("label_valid_password");
+	    lpo.getLogin(username, password);
+	    log.info("user is been logged with successfully with username:"+username+"and password:"+password);	    
+	}
+	
+	@Test
+	public void verify_user_after_login_redirects_to_dashboard_page() {
+	 String pageheading = prop.getProperty("label_page_heading");
+	  Assert.assertEquals(dpo.get_page_heading().getText(),pageheading);
+	  log.info("user after logged in redirects to "+pageheading+"page");
+	}
+	
+	@Test
+	public void verify_total_images_count_on_dashboard() {
+		int images = dpo.get_images().size();
+		Assert.assertEquals(images,5);
+		log.info("Total Images found on dashboard page are:"+images);
+		
+	}
+	
+	@Test
+	public void verify_image_link_is_not_broken() {
+	   	List<WebElement> images = dpo.get_images();
+	   	for(int i=0; i<images.size();i++) {
+	   		if(images.size() !=0) {
+	   			CloseableHttpClient client = HttpClientBuilder.create().build();
+	   		    HttpGet request = new HttpGet(images.getAttribute("src"));
+	   		}
+	   	}
+	}
+	
+	@AfterMethod
+	public void terminate() {
+		driver.quit();
+	}
+}

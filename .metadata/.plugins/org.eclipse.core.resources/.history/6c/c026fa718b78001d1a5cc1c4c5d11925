@@ -1,0 +1,41 @@
+package page_object;
+
+
+import java.util.List;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.openqa.selenium.WebElement;
+
+public class CommonPageObject {
+
+	
+	
+public void verify_image_link_on_dashboard_is_not_broken(List<WebElement> elements, String page) {
+		
+	   	List<WebElement> images = elements;
+	   	for(int i=0; i<images.size();i++) {  		
+	   		if(images.size() !=0) {
+	   			 try {
+	   				CloseableHttpClient client = HttpClientBuilder.create().build();
+		   		    HttpGet request = new HttpGet(images.get(i).getAttribute("src"));
+		   		    HttpResponse response = client.execute(request);
+		   		   if (response.getStatusLine().getStatusCode() == 200)
+	               {
+		   			     System.out.println("any images are not broken on"+page);
+	               } 
+		   		   else {
+		   			   System.out.println("image is broken on"+page);
+		   		   }
+	   			 }
+	   			 catch(Exception e) {
+	   				 e.printStackTrace();
+	   			 }
+	   		}
+	   	}
+	}
+	
+	
+}

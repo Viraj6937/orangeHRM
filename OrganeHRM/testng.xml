@@ -19,7 +19,26 @@
              <include name="verify_invalid_credentials_alert_is_not_displayed_after_page_refresh"/>
              <include name="verify_user_redirects_to_reset_password_page_after_click_on_forgot_password"/>
              <include name="verify_user_redirects_to_dashboard_after_login_with_valid_credentials"/>
+             <include name="verify_user_profile_name_for_logged_in_account"/>
+             <include name="verify_user_can_logged_out_from_account_successfully"/>
+             
          </methods>
+      </class>
+      
+      <class name="TestFile.DashboardPageTest">
+        <methods>
+             <include name="verify_user_after_login_redirects_to_dashboard_page"/>
+             <include name="verify_total_images_count_on_dashboard"/>
+             <include name="verify_image_link_on_dashboard_is_not_broken"/>
+             <include name="verify_links_count_on_dashboard"/>
+             <include name="verify_links_on_dashboard_are_not_broken"/>
+             <include name="verify_widgets_count_on_dashboard"/>
+             <include name="verify_widgets_count_on_dashboard"/>
+             <include name="verify_submenu_options_under_my_account_tab"/>
+             <include name="verify_about_us_window_popup_is_opened"/>
+             <include name="verify_list_items_under_my_action_widget"/>
+             <include name="verify_list_items_under_quicklaunch_widget"/>
+        </methods>
       </class>
     </classes>
   </test> <!-- Test -->

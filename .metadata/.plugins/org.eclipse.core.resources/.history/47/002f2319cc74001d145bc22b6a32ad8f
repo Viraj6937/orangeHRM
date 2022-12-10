@@ -1,0 +1,10 @@
+package TestFile;
+
+import Resources.Base;
+
+public class DashboardPageTest extends Base {
+
+	public WebDriver driver;
+	
+	
+}

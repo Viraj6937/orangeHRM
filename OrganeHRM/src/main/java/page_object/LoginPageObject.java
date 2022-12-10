@@ -17,6 +17,7 @@ public class LoginPageObject {
 	private By invalid_credentials_alert = By.cssSelector("div.orangehrm-login-form > div.orangehrm-login-error > div.oxd-alert--error > div > p");
 	private By forgot_password_link = By.cssSelector("div.orangehrm-login-form > form > div.orangehrm-login-forgot");
 	
+	
 	public LoginPageObject(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver = driver;
@@ -45,4 +46,11 @@ public class LoginPageObject {
 	public WebElement get_forgot_password_link() {
 		return driver.findElement(forgot_password_link);
 	}
+	
+	public void getLogin(String username, String password) {
+		driver.findElement(username_field).sendKeys(username);
+		driver.findElement(password_field).sendKeys(password);
+		driver.findElement(login_submit).click();
+	}
+	
 }

@@ -9,41 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">284,971</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">45,352</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestFile.LoginPageTest</td><td><a href="#m0">verify_invalid_credentials_alert_is_not_displayed_after_page_refresh</a></td><td rowspan="1">1670151953508</td><td rowspan="1">14228</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">TestFile.LoginPageTest</td><td><a href="#m1">verfiy_required_field_alert_is_displayed_for_empty_username_and_password_field</a></td><td rowspan="1">1670151863389</td><td rowspan="1">6021</td></tr><tr class="passedeven"><td><a href="#m2">verify_required_field_alert_is_displayed_for_empty_password_field</a></td><td rowspan="1">1670151836115</td><td rowspan="1">1711</td></tr><tr class="passedeven"><td><a href="#m3">verify_required_field_alert_is_displayed_for_empty_username_field</a></td><td rowspan="1">1670151803476</td><td rowspan="1">7025</td></tr><tr class="passedeven"><td><a href="#m4">verify_required_field_alert_is_not_displayed_after_refresh</a></td><td rowspan="1">1670151896453</td><td rowspan="1">3403</td></tr><tr class="passedeven"><td><a href="#m5">verify_url</a></td><td rowspan="1">1670151773314</td><td rowspan="1">930</td></tr><tr class="passedeven"><td><a href="#m6">verify_user_redirects_to_dashboard_after_login_with_valid_credentials</a></td><td rowspan="1">1670152029143</td><td rowspan="1">6239</td></tr><tr class="passedeven"><td><a href="#m7">verify_user_redirects_to_reset_password_page_after_click_on_forgot_password</a></td><td rowspan="1">1670151991319</td><td rowspan="1">2100</td></tr><tr class="passedeven"><td><a href="#m8">verify_user_should_not_able_to_login_with_invalid_credentials</a></td><td rowspan="1">1670151925069</td><td rowspan="1">4258</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestFile.DashboardPageTest</td><td><a href="#m0">verify_list_items_under_quicklaunch_widget</a></td><td rowspan="1">1670698334095</td><td rowspan="1">2696</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">TestFile.LoginPageTest#verify_invalid_credentials_alert_is_not_displayed_after_page_refresh</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.orangehrm-login-form &gt; div.orangehrm-login-error &gt; div.oxd-alert--error &gt; div &gt; p&quot;}
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2b493910e30c525422d3d62d4b785b33, findElement {using=css selector, value=div.orangehrm-login-form &gt; div.orangehrm-login-error &gt; div.oxd-alert--error &gt; div &gt; p}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91882\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52115/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b493910e30c525422d3d62d4b785b33
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at page_object.LoginPageObject.get_alert_field(LoginPageObject.java:42)
-	at TestFile.LoginPageTest.verify_invalid_credentials_alert_is_not_displayed_after_page_refresh(LoginPageTest.java:155)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestFile.LoginPageTest#verfiy_required_field_alert_is_displayed_for_empty_username_and_password_field</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestFile.LoginPageTest#verify_required_field_alert_is_displayed_for_empty_password_field</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestFile.LoginPageTest#verify_required_field_alert_is_displayed_for_empty_username_field</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestFile.LoginPageTest#verify_required_field_alert_is_not_displayed_after_refresh</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">TestFile.LoginPageTest#verify_url</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">TestFile.LoginPageTest#verify_user_redirects_to_dashboard_after_login_with_valid_credentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">TestFile.LoginPageTest#verify_user_redirects_to_reset_password_page_after_click_on_forgot_password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">TestFile.LoginPageTest#verify_user_should_not_able_to_login_with_invalid_credentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">TestFile.DashboardPageTest#verify_list_items_under_quicklaunch_widget</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>Assign Leave</td><td>Leave List</td><td>Timesheets</td><td>Apply Leave</td><td>My Leave</td><td>My Timesheet</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

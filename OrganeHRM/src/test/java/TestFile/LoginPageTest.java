@@ -1,24 +1,30 @@
 package TestFile;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import Resources.Base;
+import page_object.DashboardPageObject;
 import page_object.LoginPageObject;
 
 public class LoginPageTest extends Base {
 
 	public WebDriver driver;
 	public LoginPageObject lpo;
+	public DashboardPageObject dpo;
 	
 	public String label_invalid_username;
 	public String label_invalid_password;
@@ -28,7 +34,7 @@ public class LoginPageTest extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	
 	@BeforeMethod()
-	public void navigateUrl() throws IOException {
+	public void navigate_url() throws IOException {
 		
 		driver = initializeDriver();
 		log.info("driver is initialized");
@@ -45,6 +51,7 @@ public class LoginPageTest extends Base {
 		label_valid_password = prop.getProperty("label_valid_password");
 		
 		lpo = new LoginPageObject(driver);
+		dpo = new DashboardPageObject(driver);
 	}
 	
 	@Test
@@ -182,9 +189,45 @@ public class LoginPageTest extends Base {
 		log.info("user is logged-in successfully to dashboard page with valid credentials");
 	}
 	
+	@Test
+	public void verify_user_profile_name_for_logged_in_account() {
+	   lpo.get_username_field().sendKeys(label_valid_username);
+	   lpo.get_password_field().sendKeys(label_valid_password);
+	   lpo.get_login_submit().click();
+	   
+	   String username = dpo.get_user_profile_name_label().getText();
+	   WebDriverWait w = new WebDriverWait(driver,Duration.ofSeconds(10));
+	   w.until(ExpectedConditions.textToBePresentInElement(dpo.get_user_profile_name_label(),username));
+	   Assert.assertEquals(username,"fas safsa");
+	   log.info("The logged user profile name is:"+username);
+	}
+	
+	@Test
+	public void verify_user_can_logged_out_from_account_successfully() {
+		lpo.get_username_field().sendKeys(label_valid_username);
+		lpo.get_password_field().sendKeys(label_valid_password);
+		lpo.get_login_submit().click();
+		   
+		String username = dpo.get_user_profile_name_label().getText();
+		WebDriverWait w = new WebDriverWait(driver,Duration.ofSeconds(10));
+		w.until(ExpectedConditions.textToBePresentInElement(dpo.get_user_profile_name_label(),username));
+		   
+		dpo.get_user_account_tab().click();
+		List<WebElement> myaccountoptions = dpo.get_user_account_list_options();
+		for(int i=0; i<myaccountoptions.size();i++) {
+		     String optionLabel = myaccountoptions.get(i).getText();
+		     if(optionLabel.contains("Logout")) {
+		        int rowIndex = myaccountoptions.size();
+		        driver.findElement(By.cssSelector("div.oxd-topbar-header-userarea > ul > li > ul > li:nth-Child("+rowIndex+") > a")).click();
+		     }
+		}
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url"));
+		log.info("user logged out successfully");
+	}
+	
 	
 	@AfterMethod
-	public void afterTest() {
+	public void terminate() {
 		driver.quit();
 		log.info("browser is quit");
 	}

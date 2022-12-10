@@ -1,0 +1,24 @@
+package TestFile;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import Resources.Base;
+
+public class DashboardPageTest extends Base {
+
+	public WebDriver driver;
+	
+	@BeforeMethod
+	public void navigate_url() {
+		driver = initializeDriver();
+	}
+	
+	@AfterMethod
+	public void terminate() {
+		
+	}
+	
+	
+}

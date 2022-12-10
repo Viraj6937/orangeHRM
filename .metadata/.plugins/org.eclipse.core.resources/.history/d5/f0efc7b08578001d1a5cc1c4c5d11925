@@ -1,0 +1,58 @@
+package TestFile;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import Resources.Base;
+import page_object.DashboardPageObject;
+import page_object.LoginPageObject;
+
+public class DashboardPageTest extends Base {
+
+	public WebDriver driver;
+	public LoginPageObject lpo;
+	public DashboardPageObject dpo;
+	
+	public String username; 
+	public String password;
+	
+	@BeforeMethod
+	public void navigate_url() throws IOException {
+		driver = initializeDriver();
+	    driver.get(prop.getProperty("url"));
+	    driver.manage().window().maximize();
+	    
+	    lpo = new LoginPageObject(driver);
+	    dpo = new DashboardPageObject(driver);
+	    
+	    username = prop.getProperty("label_valid_username");
+	    password = prop.getProperty("label_valid_password");
+	    lpo.getLogin(username, password);
+	}
+	
+	@Test
+	public void verify_user_after_login_redirects_to_dashboard_page() {
+	 String pageheading = prop.getProperty("label_page_heading");
+	  Assert.assertEquals(dpo.get_page_heading().getText(),pageheading);
+	}
+	
+	
+	@Test
+	public void verify_total_images_count_on_dashboard() {
+		int images = dpo.get_images().size();
+		Assert.assertEquals(images,5);s
+	
+	}
+	
+	@AfterMethod
+	public void terminate() {
+		driver.quit();
+	}
+}

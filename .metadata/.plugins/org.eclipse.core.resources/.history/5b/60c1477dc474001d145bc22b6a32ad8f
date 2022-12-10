@@ -1,0 +1,16 @@
+package page_object;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class DashboardPageObject {
+
+	public WebDriver driver;
+	private By user_profile_name = By.cssSelector("div.oxd-topbar-header-userarea > ul > li > span");
+	
+	
+	public WebElement get_user_profile_name_label() {
+		return driver
+	}
+	
+}

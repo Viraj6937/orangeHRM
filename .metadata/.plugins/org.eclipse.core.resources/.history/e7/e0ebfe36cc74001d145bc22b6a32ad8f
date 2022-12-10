@@ -1,0 +1,17 @@
+package TestFile;
+
+import org.openqa.selenium.WebDriver;
+
+import Resources.Base;
+
+public class DashboardPageTest extends Base {
+
+	public WebDriver driver;
+	
+	
+	public void navigate_url() {
+		
+	}
+	
+	
+}
